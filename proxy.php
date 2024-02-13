@@ -1,3 +1,6 @@
+<?php
+header("Access-Control-Allow-Origin: *");
+header("Content-Type: application/json");
 $url = 'https://creator.zoho.com/api/v2.1/zoho_user12388/franchise-management/report/All_Franchise';
 $accessToken = 'Zoho-oauthtoken 1000.9ba3343b380970c483c0039747c31594.303b645e9ba4e8310eb497510b0c4cc1';
 
@@ -17,3 +20,4 @@ if ($response === FALSE) {
 } else {
     echo $response;
 }
+?>
